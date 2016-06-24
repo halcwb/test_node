@@ -10,6 +10,6 @@ os:
   - osx
 
 before_install:
-  - ./npm_update.sh
 
 script: 
+  - ./npm_update.sh
