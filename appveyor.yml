@@ -15,8 +15,9 @@ shallow_clone: true
 # Install scripts. (runs after repo cloning)
 install:
   # Get the latest version of $env:nodejs_version
-  - ps: Install-Product node $env:nodejs_version  - ps: node --version
-  - npm install -g npm
+  - ps: Install-Product node $env:nodejs_version  
+  - ps: node --version
+  - ps: npm install -g npm
   - ps: npm --version
 
 
