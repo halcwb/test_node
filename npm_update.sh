@@ -6,10 +6,9 @@ node -v
 npm -v
 
 # Update to the latest stable version
-sudo npm -g install npm@3
-sudo npm cache clean -f
-sudo npm install -g n
-sudo n stable
+sudo ~/.nvm/v0.10.36/bin/npm cache clean -f
+sudo ~/.nvm/v0.10.36/bin/npm install -g n
+sudo ~/.nvm/v0.10.36/lib/node_modules/n/bin/n stable
 
 # Get the current node version
 node -v

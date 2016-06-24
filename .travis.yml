@@ -3,8 +3,7 @@ language: csharp
 sudo: true 
 
 env:
-  matrix:
-    - TRAVIS_NODE_VERSION="4"
+#  - TRAVIS_NODE_VERSION="4"
 
 os:
   - linux
