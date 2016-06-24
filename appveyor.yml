@@ -15,6 +15,7 @@ shallow_clone: true
 before_build:
 
 build_script:
+  - build.cmd
   - npm_update.cmd
 
 test: off
@@ -22,6 +23,6 @@ test: off
 test_script:
   #- nuget restore tests\Tests.sln
   #- test.cmd
-  
+
 deploy_script:
   #- deploy.cmd
