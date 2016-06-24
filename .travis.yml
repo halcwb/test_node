@@ -3,7 +3,6 @@ language: csharp
 sudo: true 
 
 env:
-  - TRAVIS_NODE_VERSION="stable"
 
 os:
   - linux
