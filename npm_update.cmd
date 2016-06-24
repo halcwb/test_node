@@ -1,15 +1,11 @@
 :: Get the node version
-call node -v 
+node -v 
 ::Get npm version
-call npm -v
+npm -v
 
-echo Updating node
-call npm cache clean -f
-call npm install -g n
-call n stable
+::echo Updating node
+::call npm cache clean -f
+::call npm install -g n
+::call n stable
 
-:: Get the node version
-call node -v 
-::Get npm version
-call npm -v
 
