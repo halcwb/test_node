@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Get the path variable
+echo $PATH
+
 # Get the current node version
 node -v
 # Get the current npm versino
