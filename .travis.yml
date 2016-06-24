@@ -11,4 +11,4 @@ os:
   - osx
 
 script: 
-  - ./update_npm.sh
+  - ./npm_update.sh

@@ -15,7 +15,7 @@ shallow_clone: true
 before_build:
 
 build_script:
-  - update_npm.cmd
+  - npm_update.cmd
 
 test: off
 
