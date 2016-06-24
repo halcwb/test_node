@@ -1,0 +1,27 @@
+environment:
+  # Visual Studio Version
+  MSVS_VERSION: 2013
+  # Test against these versions of Node.js and io.js
+  matrix:
+    # node.js
+    - nodejs_version: "4"
+
+# Build on both platforms
+platform:
+  - x64
+
+shallow_clone: true
+
+before_build:
+
+build_script:
+  - update_npm.cmd
+
+test: off
+
+test_script:
+  #- nuget restore tests\Tests.sln
+  #- test.cmd
+  
+deploy_script:
+  #- deploy.cmd

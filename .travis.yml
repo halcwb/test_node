@@ -1,0 +1,14 @@
+language: csharp
+
+sudo: true 
+
+env:
+  matrix:
+    - TRAVIS_NODE_VERSION="4"
+
+os:
+  - linux
+  - osx
+
+script: 
+  - ./update_npm.sh
