@@ -11,4 +11,4 @@ os:
 before_install:
 
 script: 
-  - ./npm_update.sh
+  - ./node_update.sh 6
