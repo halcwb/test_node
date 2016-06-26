@@ -8,24 +8,25 @@ echo npm version:
 npm -v
 
 VERSION=${1:-"stable"}  
+echo "Going to install: "$VERSION
 
 if [[ "$OSTYPE" == "linux"* ]]; then
     # Linux
-    echo OS: Linux
+    echo "OS: Linux"
 
     # Update to the supplied version or latest stable version
     curl -s -o $HOME/.nvm/nvm.sh https://raw.githubusercontent.com/creationix/nvm/v0.31.0/nvm.sh
     source $HOME/.nvm/nvm.sh
-    nvm install VERSION
+    nvm install $VERSION
 
 elif [[ "$OSTYPE" == "darwin"* ]]; then
     # Mac OSX
-    echo OS: Mac
+    echo "OS: Mac"
 
     # Update to the supplied version or latest stable version
     sudo npm cache clean -f
     sudo npm install -g n
-    sudo n VERSION
+    sudo n $VERSION
 fi
 
 # Get the updated node version
