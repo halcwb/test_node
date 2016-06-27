@@ -36,3 +36,6 @@ node -v
 # Get the updated npm version
 echo npm version:
 npm -v
+
+# load the new node and npm path
+if [[ -f ~/.bashrc ]] then source  ~/.bashrc fi
