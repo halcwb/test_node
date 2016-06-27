@@ -1,14 +1,10 @@
 language: csharp
 
-sudo: true 
-
-env:
+sudo: false 
 
 os:
   - linux
   - osx
-
-before_install:
 
 script: 
   - ./node_install.sh 6.2.2
