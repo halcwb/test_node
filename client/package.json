@@ -1,0 +1,53 @@
+{
+  "name": "GenUnitApp",
+  "version": "0.0.1",
+  "description": "Unit Calculator App",
+  "main": "jakefile.js",
+  "engines": {
+    "node": "6.2.1"
+  },
+  "dependencies": {
+    "webix": "^3.3.17"
+  },
+  "devDependencies": {
+    "simplebuild-karma": "^1.0.0",
+    "requirejs": "^2.1.18",
+    "nodeunit": "^0.9.1",
+    "underscore": "^1.8.3",
+    "debug": "^2.2.0",
+    "browserify": "^13.0.1",
+    "expect.js": "^0.3.1",
+    "jake": "^8.0.12",
+    "jshint": "^2.9.2",
+    "karma": "^0.13.22",
+    "karma-commonjs": "^1.0.0",
+    "karma-expect": "^1.1.2",
+    "karma-mocha": "^1.0.1",
+    "karma-chrome-launcher": "^0.2.3",
+    "karma-firefox-launcher": "^1.0.0",
+    "mocha": "^2.5.3",
+    "nodemon": "^1.9.2",
+    "object-merge": "^2.5.1",
+    "procfile": "^0.1.1",
+    "semver": "^5.1.0",
+    "shelljs": "^0.7.0",
+    "simplebuild-jshint": "^1.3.0"
+  },
+  "scripts": {
+    "build": "node_modules/.bin/jake -f build/scripts/jakefile.js build",
+    "test": "node_modules/.bin/jake -f build/scripts/jakefile.js test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/halcwb/GenUnitApp.git"
+  },
+  "keywords": [
+    "units"
+  ],
+  "author": "halcwb",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/halcwb/GenUnitApp/issues"
+  },
+  "homepage": "https://github.com/halcwb/GenUnitApp"
+}
