@@ -21,7 +21,8 @@ install:
 before_build:
 
 build_script:
-  - build.cmd
+  - cd client
+  - npm install
 
 test: off
 
