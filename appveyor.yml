@@ -1,7 +1,7 @@
 environment:
   matrix:
     # node.js
-    - nodejs_version: "6"
+    - nodejs_version: "6.2.2"
 
 # Build on both platforms
 platform:
@@ -12,7 +12,7 @@ shallow_clone: true
 # Install scripts. (runs after repo cloning)
 install:
   # Get the latest version of $env:nodejs_version
-  - ps: Install-Product node $env:nodejs_version  
+  - ps: Install-Product node $env:nodejs_version $env:platform
   - ps: node --version
   - ps: npm install -g npm
   - ps: npm --version
