@@ -12,3 +12,5 @@ before_install:
 
 script: 
   - ./node_update.sh 6.2.2
+  - cd /client
+  - npm install
