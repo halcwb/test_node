@@ -12,5 +12,6 @@ before_install:
 
 script: 
   - ./node_install.sh 6.2.2
+  - . ~/.nvm/nvm.sh # manually source nvm
   - cd client
   - npm install
